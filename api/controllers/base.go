@@ -34,7 +34,7 @@ func (this *BaseController) CheckFormAndGet(d interface{}) bool {
 	err := validate.Struct(d)
 	if err != nil {
 		for _, err := range err.(validator.ValidationErrors) {
-			rq.ThrowError(core.NewError("参数效验错误!"))
+			rq.ThrowError(core.NewError("参数效验错误!" + err.Error()))
 			return false
 		}
 	}
@@ -56,7 +56,7 @@ func (this *BaseController) CheckJsonAndGet(d interface{}) bool {
 	err = validate.Struct(d)
 	if err != nil {
 		for _, err := range err.(validator.ValidationErrors) {
-			rq.ThrowError(core.NewError("参数效验错误!"))
+			rq.ThrowError(core.NewError("参数效验错误!" + err.Error()))
 			return false
 		}
 	}

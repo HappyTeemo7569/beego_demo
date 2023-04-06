@@ -12,7 +12,7 @@ func InitRouter() *beego.Namespace {
 		beego.NSBefore(middleware.CheckHeader),
 	)
 
-	r = append(r, InitUserRouter()...)
+	r = append(r, initUserRouter()...)
 
 	//可以添加统一前缀
 	return beego.NewNamespace("/demo",

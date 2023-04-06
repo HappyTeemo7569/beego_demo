@@ -2,10 +2,11 @@ package main
 
 import (
 	beego "github.com/beego/beego/v2/server/web"
+	"teemo_beego_demo/api/routers"
 )
 
 func main() {
-	//beego.AddNamespace(routers.InitRouter())
+	beego.AddNamespace(routers.InitRouter())
 
 	if beego.BConfig.RunMode == "dev" {
 		beego.BConfig.WebConfig.DirectoryIndex = false
