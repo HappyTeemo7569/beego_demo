@@ -5,12 +5,7 @@ import (
 )
 
 func main() {
-	//run, _ := config.String("runmode")
-	//if os.Getenv("runMode") != "" {
-	//	run = os.Getenv("runMode")
-	//}
-
-	//core.New(core.GetFileConf(run), run)
+	//beego.AddNamespace(routers.InitRouter())
 
 	if beego.BConfig.RunMode == "dev" {
 		beego.BConfig.WebConfig.DirectoryIndex = false
