@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/beego_demo.iml" filepath="$PROJECT_DIR$/.idea/beego_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../teemoKit/.idea/teemoKit.iml" filepath="$PROJECT_DIR$/../teemoKit/.idea/teemoKit.iml" />
     </modules>
   </component>
 </project>

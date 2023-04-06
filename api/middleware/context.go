@@ -1,10 +1,10 @@
 package middleware
 
 import (
+	"github.com/HappyTeemo7569/teemoKit/util"
 	"github.com/beego/beego/v2/server/web/context"
 	"github.com/nacos-group/nacos-sdk-go/inner/uuid"
 	"teemo_beego_demo/internal/core"
-	"teemo_beego_demo/internal/util"
 	"time"
 )
 

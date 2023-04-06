@@ -2,10 +2,11 @@ package middleware
 
 import (
 	"errors"
+	"github.com/HappyTeemo7569/teemoKit/tlog"
+	"github.com/HappyTeemo7569/teemoKit/util"
 	"github.com/beego/beego/v2/server/web/context"
 	"net/http"
 	"reflect"
-	"teemo_beego_demo/internal/util"
 	"time"
 )
 
@@ -28,7 +29,7 @@ func (this *UserContext) logWrite(c interface{}) {
 		param = util.JsonStr(this.Ctx.Request.Form) //客户端用from表单请求
 	}
 
-	api := util.ApiLog{
+	api := tlog.ApiLog{
 		this.Ctx.Request.RequestURI,
 		util.JsonStr(this.Header),
 		param,
