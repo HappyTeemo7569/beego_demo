@@ -4,3 +4,4 @@ logs/
 vendor
 log
 build/
+config.yml
